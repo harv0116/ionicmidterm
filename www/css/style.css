@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+.removeButton, .itemCheckbox, .output {
+	float: left;
+}
+
+.itemCheckbox {
+	margin-left: 10px;
+	}
+	
+.output {
+	padding: 5px;
+	}
+	
+.removeButton {
+	
+	margin-left: 20px;
+	}

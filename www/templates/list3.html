@@ -1,0 +1,31 @@
+<ion-view view-title="List3">
+    <ion-content>
+
+    
+           <div class="list">
+
+  			<div class="item item-input-inset">
+    			<label class="item-input-wrapper">
+      				<input type="text" ng-model="data.task" placeholder="Add a task here...">
+    			</label>
+    			<button class="button button-small button-positive" ng-click="addTask()">Add</button>
+     
+            </div>
+        
+            </div>
+            
+            
+            
+            
+        <div class="list list-inset">
+        	<div class="item item-checkbox" ng-repeat="task in tasks track by $index" ng-show="task != undefined">
+            <label class="checkbox">
+       			<input type="checkbox" ng-click="checkTask(task)" >
+     		</label>	
+             <div class="output">{{task}}</div>
+             <div class="removeButton"><button ng-click="removeTask($index)" class="button button-small button-assertive">Remove</button></div>
+            </div>
+        </div>
+            
+	</ion-content>
+</ion-view>
